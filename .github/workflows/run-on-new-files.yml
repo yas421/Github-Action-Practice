@@ -19,4 +19,4 @@ jobs:
         python-version: '3.x'
 
     - name: Run a Script
-      run: python hello.py
+      run: python HTML/hello.py
