@@ -1,0 +1,22 @@
+name: Run on New Files in Folder
+
+on:
+  push:
+    paths:
+      - 'HTML/**'
+
+jobs:
+  run-on-new-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Run a Script
+      run: python hello.py
