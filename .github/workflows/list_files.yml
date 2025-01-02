@@ -1,4 +1,4 @@
-name: List Files in Repository
+name: List Files in Repository (manually trigered workflow file)
 on: 
   push:
     branches:
